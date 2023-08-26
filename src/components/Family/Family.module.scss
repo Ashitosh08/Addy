@@ -25,7 +25,8 @@
 /* Styling for the left side content */
 .left {
   text-align: left;
-  padding: 20px 20px 20px 0; /* Adjust the padding as needed */
+  padding: 10px 0px 0px 20px;
+  margin-left: 10%; /* Adjust the padding as needed */
 }
 
 .smallText {
@@ -90,7 +91,8 @@
 /* Styling for the right side content */
 .right {
   text-align: center;
-  padding: 20px;
+
+  margin-right: 20%;
 }
 
 /* Styling for the social media icons */

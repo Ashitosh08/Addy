@@ -1,58 +1,104 @@
 import React from "react";
-import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
-import css from "./Hero.module.scss";
-import { motion } from "framer-motion";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import "./Hero.css";
+
 const Hero = () => {
+  // Define an array of movie data
+  const movieData = [
+    {
+      id: 1,
+      mainImage: "src/assets/slide_1/bg.png",
+      raysImage: "src/assets/slide_1/bgraysglow.png",
+      cloudsImage: "src/assets/slide_1/clouds.png",
+      topLeftImage: "src/assets/slide_1/AddyMollyLogo.png",
+      topRightImage: "src/assets/slide_1/addynmolly.png",
+      centerLeftImage: "src/assets/slide_1/edutainmenttext.png",
+    },
+    {
+      id: 2,
+      mainImage: "src/assets/slide_2/bg.png",
+      raysImage: "src/assets/slide_2/bgraysglow.png",
+      cloudsImage: "src/assets/slide_2/clouds.png",
+      topLeftImage: "src/assets/slide_2/AddyMollyLogo.png",
+      topRightImage: "src/assets/slide_2/readinggirl.png",
+      centerLeftImage: "src/assets/slide_2/listentext.png",
+    },
+    {
+      id: 3,
+      mainImage: "src/assets/slide_3/bg.png",
+      raysImage: "src/assets/slide_3/bgraysglow.png",
+      cloudsImage: "src/assets/slide_3/clouds.png",
+      topLeftImage: "src/assets/slide_3/AddyMollyLogo.png",
+      topRightImage: "src/assets/slide_3/readingpic.png",
+      centerLeftImage: "src/assets/slide_3/screenfreetext.png",
+    },
+    {
+      id: 4,
+      mainImage: "src/assets/slide_4/bg.png",
+      raysImage: "src/assets/slide_4/bgraysglow.png",
+      cloudsImage: "src/assets/slide_4/clouds.png",
+      topLeftImage: "src/assets/slide_4/AddyMollyLogo.png",
+      topRightImage: "src/assets/slide_4/bookpen.png",
+      centerLeftImage: "src/assets/slide_4/readingpentext.png",
+    },
+    // Add more movie data objects as needed
+  ];
+
   return (
-    <section className={`paddings ${css.wrapper}`}>
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`innerWidth ${css.container}`}
+    <div className="banner">
+      <Carousel
+        showThumbs={false}
+        autoPlay={true}
+        transitionTime={3}
+        infiniteLoop={true}
+        showStatus={false}
       >
-        <div className={css.upperElements}>
-          <motion.span className="primaryText" variants={fadeIn("right", "tween", 0.2, 1)}>
-            Hey There,
-            <br />
-            I'm Binjan.
-          </motion.span>
-          <motion.span className="secondaryText"variants={fadeIn("left", "tween", 0.4, 1)}>
-            I design beautiful simple
-            <br />
-            things, And I love what i do{" "}
-          </motion.span>
-        </div>
+        {movieData.map((movie) => (
+          <div key={movie.id} className="poster">
+            <div className="image-container">
+              {/* Main Image */}
+              <img
+                src={movie.mainImage}
+                alt="Main Slider"
+                className="main-image"
+              />
 
-        <motion.div
-          variants={fadeIn("up", "tween", 0.3, 1)}
-          className={css.person}
-        >
-          <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./person.png" alt="" />
-        </motion.div>
+              {/* Rays Image */}
+              <img src={movie.raysImage} alt="Rays" className="rays-image" />
 
-        <a className={css.email} href="mailto:zainkeepscode@gmail.com">
-          zainkeepscode@gmail.com
-        </a>
+              {/* Clouds Image */}
+              <img
+                src={movie.cloudsImage}
+                alt="Clouds"
+                className="clouds-image"
+              />
 
-        <div className={css.lowerElements}>
-          <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
-            <div className="primaryText">10</div>
-            <div className="secondaryText">
-              <div>Years</div>
-              <div>Experience</div>
+              {/* Top Left Image */}
+              <img
+                src={movie.topLeftImage}
+                alt="Top Left"
+                className="top-left-image"
+              />
+
+              {/* Top Right Image */}
+              <img
+                src={movie.topRightImage}
+                alt="Top Right"
+                className="top-right-image"
+              />
+
+              {/* Center Left Image */}
+              <img
+                src={movie.centerLeftImage}
+                alt="Center Left"
+                className="center-left-image"
+              />
             </div>
-          </motion.div>
-
-          <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className={css.certificate}>
-            <img src="./certificate.png" alt="" />
-            <span>CERTIFIED PROFATIONAL</span>
-            <span>UI/UX DESIGNER</span>
-          </motion.div>
-        </div>
-      </motion.div>
-    </section>
+          </div>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

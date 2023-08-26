@@ -11,6 +11,60 @@
   overflow: hidden; /* Hide any content that goes beyond the footer container */
 }
 
+.title {
+  font-size: 24px;
+  color: #9c0632;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; /* Vertically center label and input */
+}
+
+.label {
+  flex: 1; /* Allow label to grow and fill available space */
+  font-size: 16px;
+  color: #9c0632;
+}
+
+.input {
+  flex: 2; /* Allow input to grow and fill available space */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.buttons {
+  margin-top: 20px;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* Styling for the background image */
 .backgroundImage {
   position: absolute;
@@ -25,7 +79,8 @@
 /* Styling for the left side content */
 .left {
   text-align: left;
-  padding: 20px 20px 20px 0; /* Adjust the padding as needed */
+  padding: 10px 0px 0px 20px;
+  margin-left: 10%; /* Adjust the padding as needed */
 }
 
 .smallText {
@@ -90,7 +145,8 @@
 /* Styling for the right side content */
 .right {
   text-align: center;
-  padding: 20px;
+
+  margin-right: 20%;
 }
 
 /* Styling for the social media icons */
@@ -137,12 +193,16 @@
 /* Your existing styles for the wrapper and container */
 .wrapper {
   background: white;
+
+  /* Adjust to your desired height */
   .container {
     gap: 2rem;
     @media (max-width: $sm) {
       flex-direction: column;
       gap: 1rem;
-      align-items: flex-start;
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
     }
     .left {
       flex: 1; /* Adjust flex to make it occupy the full width */

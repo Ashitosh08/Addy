@@ -1,0 +1,74 @@
+/* Hero.css */
+
+.banner {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+}
+
+.poster {
+  position: relative;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+/* Main Image */
+.main-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Rays Image */
+.rays-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Clouds Image */
+.clouds-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Top Left Image */
+.top-left-image {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  left: 20%; /* Adjust the left position as needed */
+  width: 20% !important; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Top Right Image */
+.top-right-image {
+  position: absolute;
+  top: 38px;
+  right: 14%;
+  width: 25% !important;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+/* Center Left Image */
+.center-left-image {
+  position: absolute;
+  top: 50%; /* Adjust the top position as needed */
+  left: 20%; /* Adjust the left position as needed */
+  width: 30% !important; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  transform: translateY(-50%); /* Vertically center the image */
+}
