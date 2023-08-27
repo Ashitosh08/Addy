@@ -1,0 +1,77 @@
+/* Import your existing constants and styles */
+@import "../../styles/contants.scss";
+
+/* FAQ Component Styles */
+.faqContainer {
+  padding: 10px 20%;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  // background-color: rgb(
+  //   173,
+  //   251,
+  //   173
+  // );
+
+  background-image: url(" src/assets/FAQ/FAQ.png ");
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat;
+  background-color: #faf8bd;
+}
+
+.faqHeading {
+  font-size: 20px;
+  color: #0d8969;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.faqItem {
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Set a fixed width for both question and answer */
+  background-color: transparent; /* Remove background color from question */
+  transition: background-color 0.3s; /* Add a transition for background color change */
+}
+
+.faqButton {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%; /* Set a fixed width for the button */
+  text-align: left; /* Align button text to the left */
+  padding: 10px 0; /* Add some vertical padding */
+}
+
+.faqAnswer {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 5px 5px 20px;
+  margin-top: 10px;
+}
+
+/* Media query for responsive design, adjust as needed */
+@media (max-width: 768px) {
+  .faqContainer {
+    padding: 10px;
+  }
+
+  .faqHeading {
+    font-size: 20px;
+  }
+
+  .faqButton {
+    font-size: 16px;
+  }
+
+  .faqAnswer {
+    font-size: 14px;
+  }
+}

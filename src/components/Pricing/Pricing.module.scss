@@ -19,7 +19,7 @@
 .footer {
   background-color: #ff0066; /* Dark pink background color for the footer */
   color: #fff; /* Text color for the footer */
-  padding: 20px; /* Adjust the padding as needed */
+  padding: 0px; /* Adjust the padding as needed */
   text-align: center; /* Center align text */
   position: relative; /* To allow for the background image */
   overflow: hidden; /* Hide any content that goes beyond the footer container */
@@ -29,112 +29,131 @@
 /* Styling for the left side content */
 .left {
   text-align: left;
-  padding: 20px 20px 20px 0; /* Adjust the padding as needed */
+  padding: 20px 0px 20px 140px;
 }
 
 .smallText {
-  font-size: 14px;
+  font-size: 15px;
+  text-align: left;
   color: black;
   margin-bottom: 10px;
   margin-top: 30px;
-  font-weight: 500; /* Add space between text blocks */
+  font-weight: 500;
 }
 
 .redText {
   font-size: 24px;
   color: #721111;
-  font-weight: 800; /* Red color for the text */
-  margin-bottom: 10px; /* Add space between text blocks */
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .smallFont {
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
   color: black;
   margin-bottom: 10px;
-  font-weight: 500; /* Add space between text blocks */
 }
 
-/* Add this style to your SCSS file */
-.contactEmail {
-  display: flex !important;
-  flex-direction: row !important; /* Display side by side */
-  justify-content: flex-start; /* Align content to the top */
-  align-items: flex-start; /* Align content to the top */
-  margin-top: 10px; /* Add space between text blocks */
+/* Add these styles to your Pricing module's SCSS file */
+/* Styling for the buttons */
+.button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 15px;
+  text-align: left; /* Adjust font size as needed */
+  border: none;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+.buttonContainer {
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-right: 242px;
+  display: flex;
+  width: 100%;
 }
 
-/* Add margin to the contact and email sections for spacing */
-.contact {
-  margin-right: 40px;
-  /* Adjust the margin as needed */
+/* Add border radius to the buttons */
+.viewButton,
+.buyButton {
+  border-radius: 50px; /* Adjust the radius as needed */
 }
 
-.email {
-  margin-left: 40px; /* Adjust the margin as needed */
+/* Rest of your existing CSS */
+
+/* View button */
+.viewButton {
+  background-color: #0099cc; /* Adjust the button color */
+  color: white; /* Text color for the button */
 }
 
-.contact,
-.email {
-  margin-top: 0; /* Remove excessive margin */
-  color: #721111;
-  /* Adjust text color */
+/* Buy button */
+.buyButton {
+  background-color: #ff0066; /* Adjust the button color */
+  color: white; /* Text color for the button */
 }
 
-.bigFont {
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 11px;
+/* Hover effect */
+.button:hover {
+  background-color: #005cbf; /* Adjust the hover background color */
 }
 
-.blackText {
-  color: black;
-  text-decoration: none;
+/* Add spacing between buttons */
+.button + .button {
+  margin-left: 10px; /* Adjust the spacing between buttons */
+}
+
+.heading {
+  color: #12309f;
+  margin-top: 50px;
 }
 
 /* Styling for the right side content */
 .right {
   text-align: center;
-  padding: "0px 2px 0 0px";
+  padding: 20px 120px 20px 0;
 }
 
 /* Styling for the social media icons */
 .icons img {
-  width: 32px; /* Adjust the icon size as needed */
+  width: 32px;
   margin: 0 10px;
-  background-color: black; /* Add spacing between icons */
+  background-color: black;
 }
 
 /* In your CSS or SCSS file */
 .black-icon {
   color: black;
-  margin-right: 10px; /* Adjust the margin as needed */
+  margin-right: 10px;
 }
 
 .hashtag {
   font-size: 16px;
   margin-top: 10px;
-  color: black; /* Add spacing below the icons */
+  color: black;
 }
 
 .blendImage {
-  mix-blend-mode: multiply; /* You can choose a blending mode here */
-  /* Other styles for the image if needed */
+  mix-blend-mode: multiply;
 }
 
-/* Media query for responsive design, adjust as needed */
+/* Media query for responsive design */
 @media (max-width: 768px) {
   .left,
   .right {
-    text-align: left; /* Left-align content on smaller screens */
-    padding: 10px; /* Restore padding */
+    text-align: left;
+    padding: 10px;
   }
 
   .left {
-    margin-top: 20px; /* Add spacing above the left content on smaller screens */
+    margin-top: 20px;
   }
 
   .bigFont {
-    font-size: 16px; /* Decrease font size for contact and email headings on smaller screens */
+    font-size: 16px;
   }
 }
 
@@ -149,7 +168,7 @@
       align-items: flex-start;
     }
     .left {
-      flex: 1; /* Adjust flex to make it occupy the full width */
+      flex: 1;
       > * {
         display: block;
       }

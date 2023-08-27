@@ -5,21 +5,21 @@ import { motion } from "framer-motion";
 
 const Family = () => {
   return (
-    <motion.section
+    <section
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={`paddings ${css.wrapper} ${css.footer}`}
+      style={{
+        backgroundImage: `url('src/assets/Family/Familybg.png')`,
+        backgroundColor: "#dcb9d6",
+        height: "300px",
+      }}
     >
       {/* Add the 'footer' class here */}
+
       <div
-        className={css.backgroundImage}
-        style={{
-          backgroundImage: `url('src/assets/Family/Familybg.png')`,
-        }}
-      ></div>
-      <motion.div
         variants={footerVariants}
         className={`innerWidth yPaddings flexCenter ${css.container}`}
       >
@@ -30,7 +30,7 @@ const Family = () => {
             alt="AddMolly Logo"
             className={css.blendImage}
             style={{
-              maxWidth: "70%",
+              maxWidth: "80%",
               marginTop: "5%", // Adjust the percentage as needed
             }}
           />
@@ -51,8 +51,8 @@ const Family = () => {
                     style={{
                       listSstyle: "none",
                       flex: "1",
-                      letterSpacing: 1,
-                      fontSize: "25px",
+                      letterSpacing: 0.7,
+                      fontSize: "19px",
                       color: "#d28d20",
                       fontWeight: 700,
                       whiteSpace: "pre-line",
@@ -81,8 +81,8 @@ const Family = () => {
             </div>
           </div>
         </div>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 

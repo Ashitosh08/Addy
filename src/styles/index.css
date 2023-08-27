@@ -1,8 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Eudoxus Sans", sans-serif;
-    scroll-behavior: smooth;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+  /* font-family: "Courier Prime", monospace; */
+  /* font-family: "Roboto", sans-serif; */
+  scroll-behavior: smooth;
+}

@@ -5,19 +5,19 @@ import { motion } from "framer-motion";
 
 const Form = () => {
   return (
-    <motion.section
+    <section
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={`paddings ${css.wrapper} ${css.footer}`}
+      style={{
+        backgroundImage: `url('src/assets/Form/Formbg.png')`,
+        backgroundColor: "#a4d5ab",
+        height: "auto",
+      }}
     >
-      <div
-        className={css.backgroundImage}
-        style={{
-          backgroundImage: `url('src/assets/Form/Formbg.png')`,
-        }}
-      ></div>
+      <div className={css.backgroundImage}></div>
       <motion.div
         variants={footerVariants}
         className={`innerWidth yPaddings flexCenter ${css.container}`}
@@ -101,7 +101,7 @@ const Form = () => {
           </form>
         </div>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

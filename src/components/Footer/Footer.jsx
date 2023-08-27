@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <motion.section
+    <section
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
@@ -23,7 +23,10 @@ const Footer = () => {
       {/* Add the 'footer' class here */}
       <div
         className={css.backgroundImage}
-        style={{ backgroundImage: `url('src/assets/Footer/footer.png')` }}
+        style={{
+          backgroundImage: `url('src/assets/Footer/footer.png')`,
+          backgroundColor: "#9cc3e8",
+        }}
       ></div>
       <motion.div
         variants={footerVariants}
@@ -32,6 +35,11 @@ const Footer = () => {
         {/* Left side content */}
         <div className={css.left}>
           <p className={css.smallText}>Developed & Published by:</p>
+          <img
+            src="src/assets/Footer/lioncub.png"
+            alt="hello"
+            style={{ width: "20%", height: "20%", margin: 0, padding: "8px" }}
+          />
           <p className={css.redText}>Lion Cub Studios OPC Pvt. Ltd.</p>
           <p className={css.smallFont}>
             Mira road East, Thane, Maharashtra 401 107
@@ -88,7 +96,7 @@ const Footer = () => {
           </div>
         </div>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

@@ -5,21 +5,19 @@ import { motion } from "framer-motion";
 
 const EnglishFluency = () => {
   return (
-    <motion.section
+    <section
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       className={`paddings ${css.wrapper} ${css.footer}`}
+      style={{
+        backgroundImage: `url('src/assets/EnglishFluency/EnglishFluencybg.png')`,
+        backgroundColor: "#00223b",
+        height: "500px", // Set the fixed height here
+      }}
     >
-      {/* Add the 'footer' class here */}
       <div
-        className={css.backgroundImage}
-        style={{
-          backgroundImage: `url('src/assets/EnglishFluency/EnglishFluencybg.png')`,
-        }}
-      ></div>
-      <motion.div
         variants={footerVariants}
         className={`innerWidth yPaddings flexCenter ${css.container}`}
       >
@@ -33,9 +31,9 @@ const EnglishFluency = () => {
                     className="primaryText"
                     style={{
                       marginTop: "10px",
-                      fontSize: "25px",
-                      color: "green", // Green color
-                      display: "inline-block",
+                      fontSize: "23px",
+                      color: "#519a1c", // Green color
+                      display: "block",
                       paddingBottom: "10px",
                     }}
                   >
@@ -50,43 +48,44 @@ const EnglishFluency = () => {
                   }}
                 >
                   <ul style={{ listStyle: "none", flex: "1" }}>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Develop their English communication skills at an early
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Develop their English communication skills at an early
                       age.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Encourage them to speak, read and write in English on
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Encourage them to speak, read and write in English on
                       their own.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Improve their pronunciation and teach them grammar,
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Improve their pronunciation and teach them grammar,
                       phonetics, and new vocabulary.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Enhance their listening and speaking skills.
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Enhance their listening and speaking skills.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Reduce their mobile/TV screen time and utilize their
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Reduce their mobile/TV screen time and utilize their
                       home time more constructively.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Increase their attention span and patience.
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Increase their attention span and patience.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Foster their imagination and critical thinking.
+
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Foster their imagination and critical thinking.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Cultivate a lifelong reading and learning habit.
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Cultivate a lifelong reading and learning habit.
                     </li>
-                    <li style={{ fontSize: "14px", color: "black" }}>
-                      • Make the most of their formative years.
+                    <li style={{ fontSize: "14px", color: "#66460f" }}>
+                      ✔ Make the most of their formative years.
                     </li>
                   </ul>
                   <div>
                     <br />
                     <p
                       style={{
-                        color: "green",
+                        color: "#519a1c",
                         fontSize: "18px",
                         fontWeight: "500",
                       }}
@@ -106,14 +105,14 @@ const EnglishFluency = () => {
           <img
             src="src/assets/EnglishFluency/EnglishFluencychild.png"
             alt="AddMolly Logo"
-            className={css.blendImage}
+            // className={css.blendImage}
             style={{
               maxWidth: "70%", // Adjust the percentage as needed
             }}
           />
         </div>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 };
 

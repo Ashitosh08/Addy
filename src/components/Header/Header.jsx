@@ -11,7 +11,7 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
 
-  //to handle click outside of sidebar on mobile
+  // To handle click outside of sidebar on mobile
   useOutsideAlerter({
     menuRef,
     setMenuOpened,
@@ -22,12 +22,18 @@ const Header = () => {
       variants={headerVariants}
       initial="hidden"
       whileInView="show"
-      className={`bg-primary paddings ${css.wrapper}`}
+      className={`bg-primary  ${css.wrapper}`}
       viewport={{ once: true, amount: 0.25 }}
       style={{ boxShadow: headerShadow }}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
-        <div className={css.name}>AddynMolly</div>
+        {/* Replace "AddynMolly" text with the logo */}
+        <img
+          src="src/assets/Header/AddyMollyLogo.png" // Update the path to your logo
+          alt="AddyMolly Logo"
+          className={css.logo}
+        />
+
         <ul
           className={`flexCenter ${css.menu}`}
           ref={menuRef}
@@ -51,7 +57,7 @@ const Header = () => {
           </li>
         </ul>
 
-        {/* for medium and small screens */}
+        {/* For medium and small screens */}
         <div
           className={css.menuIcon}
           onClick={() => setMenuOpened((prev) => !prev)}

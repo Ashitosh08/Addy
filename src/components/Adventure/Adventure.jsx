@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Adventure = () => {
   return (
-    <motion.section
+    <section
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
@@ -17,21 +17,22 @@ const Adventure = () => {
         className={css.backgroundImage}
         style={{
           backgroundImage: `url('src/assets/Adventure/Adventurebg.png')`,
+          backgroundColor: "#f26969",
         }}
       ></div>
       <motion.div
         variants={footerVariants}
-        className={`innerWidth yPaddings flexCenter ${css.container}`}
+        className={`innerWidth  flexCenter ${css.container}`}
       >
         {/* Left side content */}
         <div className={css.left}>
           <img
             src="src/assets/Adventure/Adventure.png"
             alt="AddMolly Logo"
-            className={css.blendImage}
             style={{
               maxWidth: "70%",
-              marginTop: "10%", // Adjust the percentage as needed
+              marginTop: "10%",
+              padding: "0px 0 0 40px",
             }}
           />
         </div>
@@ -105,7 +106,7 @@ const Adventure = () => {
           </div>
         </div>
       </motion.div>
-    </motion.section>
+    </section>
   );
 };
 

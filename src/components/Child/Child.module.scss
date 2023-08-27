@@ -3,7 +3,7 @@
 
 /* Styling for the entire footer container */
 .footer {
-  background-color: #ff0066; /* Dark pink background color for the footer */
+  background-color: #3eb2cf; /* Dark pink background color for the footer */
   color: #980f0f; /* Text color for the footer */
 
   text-align: center; /* Center align text */
@@ -15,6 +15,7 @@
 /* In your SCSS file */
 .backgroundImage {
   position: absolute;
+  background-color: #3eb2cf;
   top: 0;
   left: 0;
   width: 100%;
@@ -66,7 +67,7 @@
   flex-direction: row !important; /* Display side by side */
   justify-content: flex-start; /* Align content to the top */
   align-items: flex-start; /* Align content to the top */
-  margin-top: 10px; /* Add space between text blocks */
+  // margin-top: 10px; /* Add space between text blocks */
 }
 
 /* Add margin to the contact and email sections for spacing */
