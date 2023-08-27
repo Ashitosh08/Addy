@@ -8,12 +8,12 @@ const Hero = () => {
   const movieData = [
     {
       id: 1,
-      mainImage: "src/assets/slide_1/bg.png",
-      raysImage: "src/assets/slide_1/bgraysglow.png",
-      cloudsImage: "src/assets/slide_1/clouds.png",
-      topLeftImage: "src/assets/slide_1/AddyMollyLogo.png",
+      mainImage: "src/components/assets/slide_1/bg.png",
+      raysImage: "src/components/assets/slide_1/bgraysglow.png",
+      cloudsImage: "src/components/assets/slide_1/clouds.png",
+      topLeftImage: "src/components/assets/slide_1/AddyMollyLogo.png",
       topRightImage: {
-        src: "src/assets/slide_1/addynmolly.png",
+        src: "src/components/assets/slide_1/addynmolly.png",
         maxWidth: "100%",
         maxHeight: "70%",
         top: "20%",
@@ -33,12 +33,12 @@ const Hero = () => {
     },
     {
       id: 2,
-      mainImage: "src/assets/slide_2/bg.png",
-      raysImage: "src/assets/slide_2/bgraysglow.png",
-      cloudsImage: "src/assets/slide_2/clouds.png",
-      topLeftImage: "src/assets/slide_2/AddyMollyLogo.png",
+      mainImage: "src/components/assets/slide_2/bg.png",
+      raysImage: "src/components/assets/slide_2/bgraysglow.png",
+      cloudsImage: "src/components/assets/slide_2/clouds.png",
+      topLeftImage: "src/components/assets/slide_2/AddyMollyLogo.png",
       topRightImage: {
-        src: "src/assets/slide_2/readinggirl.png",
+        src: "src/components/assets/slide_2/readinggirl.png",
         maxWidth: "400px", // Set the maximum width as needed for this object
         maxHeight: "70%",
         top: "20%",
@@ -59,13 +59,13 @@ const Hero = () => {
     },
     {
       id: 3,
-      mainImage: "src/assets/slide_3/bg.png",
-      raysImage: "src/assets/slide_3/bgraysglow.png",
-      cloudsImage: "src/assets/slide_3/clouds.png",
-      topLeftImage: "src/assets/slide_3/AddyMollyLogo.png",
+      mainImage: "src/components/assets/slide_3/bg.png",
+      raysImage: "src/components/assets/slide_3/bgraysglow.png",
+      cloudsImage: "src/components/assets/slide_3/clouds.png",
+      topLeftImage: "src/components/assets/slide_3/AddyMollyLogo.png",
 
       topRightImage: {
-        src: "src/assets/slide_3/readingpic.png",
+        src: "src/components/assets/slide_3/readingpic.png",
         maxWidth: "100%",
         maxHeight: "100%",
         top: "7%",
@@ -84,12 +84,12 @@ const Hero = () => {
     },
     {
       id: 4,
-      mainImage: "src/assets/slide_4/bg.png",
-      raysImage: "src/assets/slide_4/bgraysglow.png",
-      cloudsImage: "src/assets/slide_4/clouds.png",
-      topLeftImage: "src/assets/slide_4/AddyMollyLogo.png",
+      mainImage: "src/components/assets/slide_4/bg.png",
+      raysImage: "src/components/assets/slide_4/bgraysglow.png",
+      cloudsImage: "src/components/assets/slide_4/clouds.png",
+      topLeftImage: "src/components/assets/slide_4/AddyMollyLogo.png",
       topRightImage: {
-        src: "src/assets/slide_4/bookpen.png",
+        src: "src/components/assets/slide_4/bookpen.png",
         maxWidth: "100%",
         maxHeight: "90%",
         top: "2%",
